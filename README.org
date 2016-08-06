@@ -3,5 +3,11 @@ Bulk-artefact-uploader is based off the work done by Chris Watts that I came acr
 
    http://www.devgrok.com/2012/01/bulk-upload-of-maven-artifacts-to.html
 
-I have taken his code and made some changes to it and am publishing it via Github.
+I have taken his code and made some changes to it and am publishing it via GitHub.
+
+** TODO
+   - Handle command line options
+   - Handle snapshots and releases repositories
+   - Handle versions that are of the form fubar-4.1.0-freesdk.jar in which '-freesdk' is part of the version
+   - Turn this into a proper command line executable
 
