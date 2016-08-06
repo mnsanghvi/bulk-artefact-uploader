@@ -1,0 +1,7 @@
+
+Bulk-artefact-uploader is based off the work done by Chris Watts that I came across at:
+
+   http://www.devgrok.com/2012/01/bulk-upload-of-maven-artifacts-to.html
+
+I have taken his code and made some changes to it and am publishing it via Github.
+
