@@ -10,8 +10,11 @@ I have taken his code and made some changes to it and am publishing it via GitHu
      + Options for handling 
      ++ extensions
      ++ classifiers
-     ++ maven binary location
-     ++ maven options
+     ++ mvn-bin
+     ++ mvn-opts (by default use MVN_OPTS)
+     ++ mvn-home (by default use MAVEN_HOME or M2_HOME)
+     ++ repo-url
+     ++ repo-id
    - Handle snapshots and releases repositories
    - Handle versions that are of the form fubar-4.1.0-freesdk.jar in which '-freesdk' is part of the version
    - Turn this into a proper command line executable
