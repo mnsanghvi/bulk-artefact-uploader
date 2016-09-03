@@ -1,20 +1,36 @@
+* bulk-artefact-uploader
 
-Bulk-artefact-uploader is based off the work done by Chris Watts that I came across at:
+** Background
+ At work, a Nexus server that was being used by my group but being maintained by another group crashed.
+ Luckily we had a local repository from which to upload to another Nexus server that my group had control
+ over.
 
-   http://www.devgrok.com/2012/01/bulk-upload-of-maven-artifacts-to.html
+ I did not want to sit around and create a Maven POM file for all the artefacts that needed to be downloaded
+ when I could just upload them from the maven cache repository.  At the same time I didn't want to manually
+ do the upload since there were too many of them.
 
-I have taken his code and made some changes to it and am publishing it via GitHub.
+ I looked around and came across the importer by Chris Watts at the following location:
 
-* Requirements
-  - Handle command line options for
-    + extensions
-    + classifiers
-    + mvn-bin
-    + mvn-opts (by default use MVN_OPTS)
-    + mvn-home (by default use MAVEN_HOME or M2_HOME)
-    + repo-url
-    + repo-id
-  - Handle snapshots and releases repositories
-  - Handle versions that are of the form fubar-4.1.0-freesdk.jar in which '-freesdk' is part of the version
-  - Turn this into a proper command line executable
+    http://www.devgrok.com/2012/01/bulk-upload-of-maven-artifacts-to.html
+
+ It got the job done, but it handled JARs only.  I had some WARs and ZIPs and some other classifiers, as well
+ as snapshot and release versions to deal with.  I had to modify the original class for each round of doing
+ the uploads.
+
+ Hence the idea to improve upon the original and see if it can be made flexible enough to handle different
+ situations.
+
+
+** Requirements
+   - Handle command line options for
+     + extensions
+     + classifiers
+     + mvn-bin
+     + mvn-opts (by default use MVN_OPTS)
+     + mvn-home (by default use MAVEN_HOME or M2_HOME)
+     + repo-url
+     + repo-id
+   - Handle snapshots and releases repositories
+   - Handle versions that are of the form fubar-4.1.0-freesdk.jar in which '-freesdk' is part of the version
+   - Turn this into a proper command line executable
 
