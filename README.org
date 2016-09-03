@@ -5,17 +5,16 @@ Bulk-artefact-uploader is based off the work done by Chris Watts that I came acr
 
 I have taken his code and made some changes to it and am publishing it via GitHub.
 
-** TODO
-   - Handle command line options
-     + Options for handling 
-     ++ extensions
-     ++ classifiers
-     ++ mvn-bin
-     ++ mvn-opts (by default use MVN_OPTS)
-     ++ mvn-home (by default use MAVEN_HOME or M2_HOME)
-     ++ repo-url
-     ++ repo-id
-   - Handle snapshots and releases repositories
-   - Handle versions that are of the form fubar-4.1.0-freesdk.jar in which '-freesdk' is part of the version
-   - Turn this into a proper command line executable
+* TODO
+  - Handle command line options for
+    + extensions
+    + classifiers
+    + mvn-bin
+    + mvn-opts (by default use MVN_OPTS)
+    + mvn-home (by default use MAVEN_HOME or M2_HOME)
+    + repo-url
+    + repo-id
+  - Handle snapshots and releases repositories
+  - Handle versions that are of the form fubar-4.1.0-freesdk.jar in which '-freesdk' is part of the version
+  - Turn this into a proper command line executable
 
