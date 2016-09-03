@@ -5,7 +5,7 @@ Bulk-artefact-uploader is based off the work done by Chris Watts that I came acr
 
 I have taken his code and made some changes to it and am publishing it via GitHub.
 
-* TODO
+* Requirements
   - Handle command line options for
     + extensions
     + classifiers
