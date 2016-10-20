@@ -5,9 +5,6 @@
 
 import java.io.*;
 import java.util.*;
-import joptsimple.OptionParser;
-import joptsimple.OptionSet;
-
 
 public class Importer {
     private String directory;
