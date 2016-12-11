@@ -30,7 +30,13 @@
      + mvn-home (by default use MAVEN_HOME or M2_HOME)
      + repo-url
      + repo-id
-   - Handle snapshots and releases repositories
+   - Handle snapshot and release repositories
    - Handle versions that are of the form fubar-4.1.0-freesdk.jar in which '-freesdk' is part of the version
    - Turn this into a proper command line executable
 
+** Enhancements
+   - Migrate from one repository to another repository
+     + importer <source_repo> <target_repo>  will migrate from source to target
+   - Use [[http://bazel.build][Bazel]] for building instead of Gradle or Maven ?
+     + Limits operating systems to Linux, OSX and Windows.
+     + Only 64-bit platforms (as of 2016-12-10)
